@@ -13,6 +13,26 @@ html {
   --color-background:#030207;
   --color-white: #fff;
   --color-blue: #1474b4;
+  --color-hover: #ababae;
+}
+
+.buttons{
+margin-left: 2rem;
+margin-top: 2rem;
+}
+
+button{
+  padding: .5rem;
+  margin-left: .5rem;
+  border-radius: .5rem;
+  background-color: var(--color-background);
+  border: 1px solid var(--color-white);
+  color: var(--color-white);
+  transition: linear 0.1s;
+}
+
+button:hover{
+  background-color: var(--color-hover);
 }
 
 .footerLink {
