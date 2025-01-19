@@ -52,7 +52,7 @@ button:hover {
 
 .guideLink{
   text-decoration:none;
-  display: inline;
+  display: wrap;
   color:var(--color-white);
   border-bottom:1px solid var(--color-white);
   padding:0.5rem;
