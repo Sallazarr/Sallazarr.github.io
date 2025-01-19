@@ -13,6 +13,7 @@ html {
   --color-background:#030207;
   --color-white: #fff;
   --color-blue: #1474b4;
+  --color-hover: #3e293a;
 }
 
 .buttons{
@@ -26,13 +27,13 @@ button{
   border-radius: .35rem;
   align-content: center;
   background-color: var(--color-background);
-  color:var(--color-white);
+  color: var(--color-white);
   border: 1px solid var(--color-white);
-  transition: ease-in-out 1s;
+  transition: background-color 0.3s ease-in-out; /* Transição mais rápida */
 }
 
 button:hover{
-
+  background-color: var(--color-hover);
 }
 
 .footerLink {
