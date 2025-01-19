@@ -21,7 +21,7 @@ html {
   margin-left: 2rem;
 }
 
-button{
+button {
   padding: .35rem;
   margin-left: 1rem;
   border-radius: .35rem;
@@ -29,12 +29,15 @@ button{
   background-color: var(--color-background);
   color: var(--color-white);
   border: 1px solid var(--color-white);
-  transition: background-color 0.3s ease-in-out; /* Transição mais rápida */
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Transições para transformação e cor */
+  cursor: pointer;
 }
 
-button:hover{
+button:hover {
   background-color: var(--color-hover);
+  transform: scale(1.01); /* Aumenta o tamanho do botão em 10% */
 }
+
 
 .footerLink {
   display: inline-block; /* Necessário para aplicar transform corretamente */
@@ -49,7 +52,7 @@ button:hover{
 
 .guideLink{
   text-decoration:none;
-  display: inline-block;
+  display: inline;
   color:var(--color-white);
   border-bottom:1px solid var(--color-white);
   padding:0.5rem;
@@ -123,6 +126,7 @@ h3{
 }
 
 .guideText{
+  
   text-align:center;
   font-size:1.2rem;
   margin-left:5rem;
@@ -149,7 +153,8 @@ h3{
 }
 
 .school{
-  margin-left:6rem;
+  margin-left:25%;
+  margin-right: 25%;
   margin-bottom:2rem;
   margin-top:3rem;
   font-size:1.2rem;
@@ -165,71 +170,6 @@ h3{
   justify-content: center; /* Alinha as imagens no centro horizontal */
   align-items: center; /* Alinha as imagens no centro vertical */
   height: auto; /* Ocupa toda a altura da tela */
-}
-
-.logoTech{
-  height:5%;
-  width:5%;
-  margin:2rem;
-  border-radius:10%;
-  
-}
-
-.logoTechCSS{
-  height:6.2%;
-  width:6.2%;
-  margin-bottom:8px;
-  mix-blend-mode:screen;
-}
-
-.logoTechJS{
-  height:4%;
-  width:4%;
-  margin:2rem;
-  border-radius:10%;
-}
-
-.logoTechSQL{
-  height:4%;
-  width:4%;
-  margin-bottom:8px;
-   margin-top:0.5rem;
-  color:var(--color-background)
-}
-
-.logoTechJava{
-  height:4%;
-  width:4%;
-  margin:2rem;
-  mix-blend-mode:screen;
-}
-
-.logoTechReact{
-  height:6.2%;
-  width:6.2%;
-  margin-bottom:8px;
-  mix-blend-mode:screen;
-}
-
-.logoTechPost{
-  height:6.2%;
-  width:5%;
-  margin-bottom:8px;
-  mix-blend-mode:screen;
-}
-
-.logoTechMongo{
-  height:4.5%;
-  width:4.5%;
-  margin:2rem;
-  mix-blend-mode:screen;
-}
-
-.logoTechNext{
-  height:6.2%;
-  width:5%;
-  margin-bottom:8px;
-  mix-blend-mode:screen;
 }
 
 .tasks{
