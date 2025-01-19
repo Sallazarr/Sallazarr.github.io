@@ -15,6 +15,26 @@ html {
   --color-blue: #1474b4;
 }
 
+.buttons{
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+button{
+  padding: .35rem;
+  margin-left: 1rem;
+  border-radius: .35rem;
+  align-content: center;
+  background-color: var(--color-background);
+  color:var(--color-white);
+  border: 1px solid var(--color-white);
+  transition: ease-in-out 1s;
+}
+
+button:hover{
+
+}
+
 .footerLink {
   display: inline-block; /* Necessário para aplicar transform corretamente */
     color: var(--color-blue);
