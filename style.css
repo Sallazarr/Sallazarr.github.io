@@ -23,13 +23,14 @@ html {
 
 button {
   padding: .35rem;
-  margin-left: 1rem;
+  margin-left: 2rem;
+  margin-top: 2rem;
   border-radius: .35rem;
   align-content: center;
   background-color: var(--color-background);
   color: var(--color-white);
   border: 1px solid var(--color-white);
-  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Transições para transformação e cor */
+  transition: transform 0.1s ease-in-out, background-color 0.1s ease-in-out; /* Transições para transformação e cor */
   cursor: pointer;
 }
 
@@ -57,20 +58,21 @@ button:hover {
   justify-content: center;
   width: 100%;
   min-width: 25%;
+  max-width: 125%;
 }
 
 .guideLink{
+  display: inline-block;
   text-decoration:none;
   color:var(--color-white);
   border-bottom:1px solid var(--color-white);
   padding:0.5rem;
   margin:1rem;
-  transition:transform 0.3s ease;
-
+  transition: transform 0.1s ease-in-out;
 }
 
 .guideLink:hover{
- transform:scale(1.1);
+  transform: scale(1.05);
 }
 
 body{
