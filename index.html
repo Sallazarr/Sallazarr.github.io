@@ -1,136 +1,50 @@
-<html data-lang="ptbr">
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400&display=swap" rel="stylesheet"/> 
-    <link rel="stylesheet" href="style.css">
+    <title>Login FoodI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Clone Ifood/CSS/style.css">
     <script src="index.js" defer></script>
-    <link rel='icon' href="/favicon/heart-svgrepo-com.svg" type="image/icon">
-  <title>Portfólio Dev</title>
-  </head>
-  <body>
-    <main data-theme="dark">
+    <script src="particles-config.js" defer></script>
+    <script src="particles.min.js"></script>
 
-
-      <div class="backgroundTop">
-     
-          <button id="switchTheme">Trocar Tema Claro/Escuro</button>
-          <button id="language">Trocar Língua</button>
-
-      <section class="top">  
-  
-      <h1 class="title">Portfólio Dev</h1>
-      <br>
-      <p class="text">Olá, meu nome é Henrique Salazar da Silva 
-        <br>
-        Sou estudante de programação e amante da tecnologia</p>
-      </section>
-      </div>
-      
-      <section class="guide">
-        <h2 class="guideTitle">
-          <a href=#aboutMe id="guideLink1" class="guideLink">Sobre mim</a>
-          <a href=#studies id="guideLink2" class="guideLink">Formação Acadêmica</a>
-          <a href=#tech id="guideLink3" class="guideLink">Tecnologias</a>
-          <a href=#exp id="guideLink4" class="guideLink">Experiência</a>
-        </h2>
-      </section>
-      <section id="aboutMe" class="aboutMe">
-        <h3 class="myself">Sobre mim</h3>
-        <img class="myPhoto" src="https://media.licdn.com/dms/image/v2/D4D03AQFxj0ifbXHXuw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1732305080300?e=1740009600&v=beta&t=Vm63u_NW8mO5GxyEGUMK5g2LpMHWgsu2OqXwriJN6ME" alt="Foto Henrique Salazar da Silva">
-        <p id="guideText1" class="guideText">
-          Estudante de Programação em busca de novas oportunidades na área de TI, com grande disposição para aprender e evoluir. Atualmente, estou aprofundando meus conhecimentos na QI Faculdades & Escola Técnica, além de me especializar em programação por meio do curso online da OneBitCode.
-<br><br>
-Tive a oportunidade de atuar como estagiário no Tribunal de Justiça do Estado do Rio Grande do Sul, onde desenvolvi habilidades práticas em organização de processos e trabalho em equipe, além de aprimorar minha comunicação interpessoal em um ambiente profissional.
-<br><br>
-Estou em busca de novas oportunidades para aplicar meus conhecimentos em desenvolvimento web, adquirir mais experiência prática e crescer na área para me tornar um desenvolvedor mais competente.
-        </p>
-      </section>
-      <br><br><br>
-        <section id="studies" class="studies">
-        <h3>Formação acadêmica</h3>
-        <p class="guideText">
-          No momento eu estou fazendo dois cursos diferentes simultaneamente, um semipresencial e outro online, e são eles respectivamente:
-           </p>
-          <ul class="ulSchool">
-            <li class="school">Técnico em informática para internet - QI Faculdades & Escola Técnica</li>     
-            <li class="school">Programador FullStack JavaScript - OneBitCode</li>
-          </ul>
-          <div class="container">
-          <img id="logoQI" class="logo" src="data:image/png;base64,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" alt="Logo QI">
-          
-                      <img class="logo" src="data:image/png;base64,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" alt="Logo OneBitCode">
-          </div>
-          <p class="guideText">
-          No curso da QI eu possuo um certificado de aluno destaque na disciplina "Desenvolvimento de sistemas web 1".
-            <br>
-          Já na OneBitCode eu possuo alguns certificados de conclusão de disciplinas.
-            <br>
-            Você pode ver com mais detalhes em meu <a class="footerLink" href="https://www.linkedin.com/in/henrique-salazar-da-silva-dev/" target="_blank">LinkedIn</a>
-          </p>
-      </section>
-      <section id="tech" class="tech">
-      <h3>
-        Tecnologias
-        </h3>
-        <p class="guideText">
-        Tecnologias que já estudei:
-        </p>
-        <div class="containerTech">
-          <ul class="ulSchool">
-            <li class="school">HTML</li>
-            <li class="school">CSS</li>
-            <li class="school">Javascript</li>
-            <li class="school">SQL</li>
-          </ul>
-          </div>
-        <p class="guideText">
-          Tecnologias que irei estudar:
-        </p>
-        <ul class="ulSchool">
-          <li class="school">Typescript</li>
-          <li class="school">ReactJS</li>
-          <li class="school">Node.js</li>
-          <li class="school">PostgreSQL</li>
-          <li class="school">MongoDB</li>
-          <li class="school">NextJS</li>
-        </ul>
+</head>
+<body data-theme="light">
+    <div id="particles-js"></div>
+    <div class="page-container">
+        <div class="left-side">
+            <button id="themeSwitcher">Tema Escuro</button>
+            <div class="text">
+             <h1>Bem Vindo a FoodI!</h1> <img src="/Clone Ifood/CSS/img/restaurant.png" alt="">
+             <h2>Peça seu prato favorito com um clique.</h2>
+            <p>O FoodI é a maneira mais rápida e prática de receber suas refeições favoritas, no conforto da sua casa. Escolha entre os melhores restaurantes, faça seu pedido e receba sem complicação.</p>
+            <p>Simples, rápido e delicioso. A melhor experiência de delivery ao seu alcance.</p>
         </div>
-     </section>
-      <section id="exp" class="exp">
-        <h3>
-          Experiências
-        </h3>
-        <p class="guideText">
-        Tive a oportunidade de fazer um estágio de nível médio no Tribunal de Justiça do Estado do Rio Grande do Sul, aonde eu pude desenvolver o trabalho em equipe e ter mais responsabilidade.
-<br><br>
-          Durante o estágio me foram designadas as seguintes tarefas:<br>
-          </p>
-          <ul>
-            <li class="tasks">Recebimento de processos e repasse de informações presencialmente.</li>
-            <li class="tasks">Realização de impressão e cópia de documentos.</li>
-            <li class="tasks">Realização da organização de documentos.</li>
-            <li class="tasks">Utilização do sistema Eproc para execução de tarefas.</li>
-            <li class="tasks">Encaminhamento de processos e correspondências.</li>     
-        </ul>
-        
-      </section>
-    </main>
-    
-    
-     <footer class="footer">
-        Made with
-        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="#f64348" stroke="#f64348" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-        </svg>
-        by Henrique Salazar
-       <br>
-       <a class="footerLink" href="https://www.linkedin.com/in/henrique-salazar-da-silva-dev/" target="_blank">LinkedIn</a>
-       <a class="footerLink" href="https://github.com/Sallazarr" target="_blank">GitHub</a>
-    </footer>
-  </body>
-  
+        </div>
+
+        <div class="right-side">
+            <div class="login-container">
+                <img src="/Clone Ifood/CSS/img/snack.png" alt="">
+                <form id="loginForm">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" required>
+
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" required>
+
+                    <button type="submit">Entrar</button>
+                </form>
+                <p id="error-message" class="error-message"></p>
+                <div class="links-container">
+                    <a href="/Clone Ifood/cadastro.html">Cadastrar-se</a>
+                    <a href="">Esqueceu a senha? </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
